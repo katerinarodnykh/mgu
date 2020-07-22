@@ -32,5 +32,109 @@ html {
   overflow: hidden;
 }
 
+a {
+  text-decoration: none;
+}
 
+@font-face {
+  font-family: "HelveticaNeue";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: local('HelveticaNeue'),local('HelveticaNeue-Regular'),
+  url("../fonts/HelveticaNeue-Regular.woff2") format("woff2"),
+  url("../fonts/HelveticaNeue-Regular.woff") format("woff"),
+  url("../fonts/HelveticaNeue-Regular.ttf") format("ttf");
+}
 
+@font-face {
+  font-family: "EditorialGrotesk";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: local('EditorialGrotesk'),local('EditorialGrotesk-Bold'),
+  url("../fonts/EditorialGrotesk-Bold.woff2") format("woff2"),
+  url("../fonts/EditorialGrotesk-Bold.woff") format("woff"),
+  url("../fonts/EditorialGrotesk-Bold.ttf") format("ttf");
+
+} 
+.main {
+  font-family: "HelveticaNeue";
+  font-size: 16px;
+  line-height: 26px;
+  color:#575757;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.news-main {
+  font-family: "EditorialGrotesk";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 26px;
+  line-height: 26px;
+  color: #111111;
+}
+
+.news-al {
+  font-family: "EditorialGrotesk";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 10px;
+  line-height: 16px; 
+  color: #111111;
+}
+
+.news-date {
+  font-family: "HelveticaNeue";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #575757;
+}
+
+.news-heading {
+  font-family: "EditorialGrotesk";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 26px; 
+  color: #111111;
+}
+
+.news-text {
+  font-family: "HelveticaNeue";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #575757;
+}
+
+.sberbank-text {
+  font-family: "EditorialGrotesk";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 26px; 
+  color: #828282;
+}
+
+.sponsors-text {
+  font-family: "EditorialGrotesk";
+  font-weight: 700;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 26px; 
+  color: #828282;
+}
+
+.copyright {
+  font-family: "HelveticaNeue";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
+}
