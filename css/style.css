@@ -55,28 +55,28 @@ html {
 }
 
 a {
-  color:#575757;
+  color: #575757;
   text-decoration: none;
 }
 
 .main {
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", "Arial", san-serif;
   font-size: 16px;
   line-height: 26px;
-  color:#575757;
+  color: #575757;
   font-style: normal;
   font-weight: 400;
 }
 
 .news-main {
-  font-family: "Editorial Grotesk";
+  font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 26px;
   color: #111111;
 }
 
 .news-al {
-  font-family: "Editorial Grotesk";
+  font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 10px;
   line-height: 16px; 
@@ -84,29 +84,33 @@ a {
 }
 
 .news-date {
+  font-size: 13px;
   line-height: 16px;
 }
 
 .news-heading {
-  font-family: "Editorial Grotesk";
+  font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 20px;
   color: #111111;
 }
 
 .sberbank-text {
-  font-family: "Editorial Grotesk";
+  font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
+  font-size: 13px;
   color: #828282;
 }
 
 .sponsors-text {
-  font-family: "Editorial Grotesk";
+  font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
+  font-size:13px;
   color: #828282;
 }
 
 .copyright {
+  font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
 }
