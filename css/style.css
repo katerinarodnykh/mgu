@@ -59,6 +59,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style-type: none;
+}
+
 .main {
   font-family: "Helvetica Neue", "Arial", san-serif;
   font-size: 16px;
@@ -66,6 +70,7 @@ a {
   color: #575757;
   font-style: normal;
   font-weight: 400;
+  background-color: #F7F7F7;
 }
 
 .news-main {
@@ -113,4 +118,138 @@ a {
   font-size: 13px;
   line-height: 16px;
   color: #FFFFFF;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+.sidebar {
+  width: 278px;
+  height: 1223px;
+  margin-left: 40px;
+  margin-top: 30px;
+  background-color: #aeaeae;
+}
+
+.news-block {
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.news-al-link {
+  display: flex;
+  margin-right: 15px;
+}
+
+.news-arrow {
+  margin-left: 10px;
+}
+
+.news {
+  margin-top: 30px;
+  width: 924px;
+  height: 1223px;
+  margin-left: 20px;
+}
+
+.news-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.news-item {
+  margin: 15px;
+  width: 278px;
+  height: 569px;
+}
+
+.news-item-block {
+  margin: 20px;
+}
+
+.news-date {
+  margin-bottom: 10px;
+}
+
+.news-heading {
+  margin-bottom: 10px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+}
+
+.sponsors {
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+  justify-content: space-between;
+}
+
+.sberbank-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sberbank-text {
+  margin-right: 30px;
+}
+
+.sponsors-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: -10px;
+}
+
+.sponsors-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sponsors-item {
+  margin-left: 30px;
+}
+
+.sponsors-text {
+  margin-right: 30px;
+}
+
+.sponsors-image {
+  border-radius: 30px;
+}
+
+.contacts {
+  height: 102px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #111111;
+  justify-content: space-between;
+}
+
+.socials-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.copyright {
+  margin-left: 30px;
+  margin-top: 43px;
+  margin-bottom: 43px;
+}
+
+.socials-image {
+  margin: 40px;
 }
