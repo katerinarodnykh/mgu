@@ -71,62 +71,12 @@ li {
   font-style: normal;
   font-weight: 400;
   background-color: #F7F7F7;
-}
-
-.news-main {
-  font-family: "Editorial Grotesk", "Arial", san-serif;
-  font-weight: 700;
-  font-size: 26px;
-  color: #111111;
-}
-
-.news-al {
-  font-family: "Editorial Grotesk", "Arial", san-serif;
-  font-weight: 700;
-  font-size: 10px;
-  line-height: 16px; 
-  color: #111111;
-}
-
-.news-date {
-  font-size: 13px;
-  line-height: 16px;
-}
-
-.news-heading {
-  font-family: "Editorial Grotesk", "Arial", san-serif;
-  font-weight: 700;
-  font-size: 20px;
-  color: #111111;
-}
-
-.sberbank-text {
-  font-family: "Editorial Grotesk", "Arial", san-serif;
-  font-weight: 700;
-  font-size: 13px;
-  color: #828282;
-}
-
-.sponsors-text {
-  font-family: "Editorial Grotesk", "Arial", san-serif;
-  font-weight: 700;
-  font-size:13px;
-  color: #828282;
-}
-
-.copyright {
-  font-size: 13px;
-  line-height: 16px;
-  color: #FFFFFF;
-}
-
-.main {
   margin: 0 auto;
   width: 1280px;
   display: flex;
-  flex-direction: row;
   padding: 40px 40px 30px 50px;
 }
+
 
 .sidebar {
   width: 280px;
@@ -143,14 +93,31 @@ li {
   justify-content: space-between;
   align-items: center;
   padding-right: 25px;
+  padding-bottom: 15px;
+}
+
+.news-main {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #111111;
 }
 
 .news-al-link {
   display: flex;
 }
 
+.news-al {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 16px; 
+  color: #111111;
+}
+
 .news-arrow {
   margin-left: 10px;
+
 }
 
 .news-list {
@@ -159,9 +126,24 @@ li {
 }
 
 .news-item {
-  margin-top: 15px;
   margin-bottom: 25px;
   margin-right: 30px;
+  width: 270px;
+}
+
+.news-item::before {
+  content: "";
+  position: absolute;
+  bottom: 310px;
+  border-bottom: 10px solid #FD1E4F;
+  width: 270px;
+}
+
+.news-item::after {
+  content: "";
+  position: absolute;
+  top: 910px;
+  border-bottom: 10px solid #FD1E4F;
   width: 270px;
 }
 
@@ -171,10 +153,16 @@ li {
 }
 
 .news-date {
+  font-size: 13px;
+  line-height: 16px;
   margin-bottom: 10px;
 }
 
 .news-heading {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #111111;
   margin-bottom: 10px;
 }
 
@@ -187,41 +175,47 @@ li {
 
 .sponsors {
   display: flex;
-  padding: 30px;
+  padding: 40px;
   justify-content: space-between;
+  align-items: center;
 }
 
 .sberbank-link {
   display: flex;
-  align-items: center;
 }
 
 .sberbank-text {
   margin-right: 30px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #828282;
+  align-self: center;
 }
 
 .sponsors-block {
   display: flex;
-  align-items: center;
-  margin-top: -10px;
+}
+
+.sponsors-text {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size:13px;
+  color: #828282;
+  margin-right: 30px;
+  align-self: center;
 }
 
 .sponsors-list {
   display: flex;
-  flex-direction: row;
-  align-items: center;
 }
 
 .sponsors-item {
   margin-left: 30px;
 }
 
-.sponsors-text {
-  margin-right: 30px;
-}
-
 .sponsors-image {
-  border-radius: 30px;
+  border-radius: 50%;
 }
 
 .contacts {
@@ -229,6 +223,14 @@ li {
   align-items: center;
   background-color: #111111;
   justify-content: space-between;
+  padding: 43px 30px;
+}
+
+.copyright {
+  font-family: "Helvetica Neue", "Arial", san-serif;
+  font-size: 13px;
+  line-height: 16px;
+  color: #FFFFFF;
 }
 
 .socials-list {
@@ -236,12 +238,11 @@ li {
   align-items: center;
 }
 
-.copyright {
-  padding-left: 30px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-}
 
-.socials-image {
+.line {
+  height: 50px;
+  border-left:1px solid #575757;
+  width: 1px;
+  margin-left: 40px;
   margin-right: 40px;
 }
