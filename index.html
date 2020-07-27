@@ -5,10 +5,13 @@
     <title>МГУ</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<main class="main">
-      <section class="news">
+    <section class="sidebar-news">
+      <div class="sidebar"></div>
+      <div class="news">
         <div class="news-block">
           <h2 class="news-main">Новости</h2>
           <a class="news-al-link" href="#">
@@ -19,7 +22,7 @@
         <ul class="news-list">
           <li class="news-item">
             <a class="news-link" href="#">
-              <img class="news-image" src="img/image-news-1.png" alt="новости-1" width="278" height="233">
+              <img class="news-image" src="img/image-news-1.png" alt="новости-1" width="275" height="233">
               <div class="news-item-block">
                 <p class="news-date">23 февраля</p>
                 <h3 class="news-heading">Длинное название вторая строка</h3>
@@ -29,7 +32,17 @@
           </li>
           <li class="news-item">
             <a class="news-link" href="#">
-              <img class="news-image" src="img/image-news-2.png" alt="новости-2" width="278" height="233">
+              <img class="news-image" src="img/image-news-2.png" alt="новости-2" width="275" height="233">
+              <div class="news-item-block">
+                <p class="news-date">23 февраля</p>
+                <h3 class="news-heading">Длинное название вторая строка</h3>
+                <p class="news-text">Пресс-служба московского «Динамо» на официальном сайте клуба сообщила, что команду покидают 7 футболистов, контракты которых истекают 31 июля и не будут продлены: Роман Нойштедтер, Артур Юсупов, Оскар Хильемарк, Кирилл Панченко, Владимир Рыков, Жоаозиньо, Антон Соснин.</p>
+              </div>
+            </a>  
+          </li>
+          <li class="news-item">
+            <a class="news-link" href="#">
+              <img class="news-image" src="img/image-news-3.png" alt="новости-3" width="275" height="233">
               <div class="news-item-block">
                 <p class="news-date">23 февраля</p>
                 <h3 class="news-heading">Длинное название вторая строка</h3>
@@ -39,7 +52,7 @@
           </li>
           <li class="news-item">
             <a class="news-link" href="#">
-              <img class="news-image" src="img/image-news-3.png" alt="новости-3" width="278" height="233">
+              <img class="news-image" src="img/image-news-4.png" alt="новости-4" width="275" height="233">
               <div class="news-item-block">
                 <p class="news-date">23 февраля</p>
                 <h3 class="news-heading">Длинное название вторая строка</h3>
@@ -49,7 +62,7 @@
           </li>
           <li class="news-item">
             <a class="news-link" href="#">
-              <img class="news-image" src="img/image-news-4.png" alt="новости-4" width="278" height="233">
+              <img class="news-image" src="img/image-news-5.png" alt="новости-5" width="275" height="233">
               <div class="news-item-block">
                 <p class="news-date">23 февраля</p>
                 <h3 class="news-heading">Длинное название вторая строка</h3>
@@ -59,17 +72,7 @@
           </li>
           <li class="news-item">
             <a class="news-link" href="#">
-              <img class="news-image" src="img/image-news-5.png" alt="новости-5" width="278" height="233">
-              <div class="news-item-block">
-                <p class="news-date">23 февраля</p>
-                <h3 class="news-heading">Длинное название вторая строка</h3>
-                <p class="news-text">Одна из самых скандальных и ранее успешных сборных в прошлом году не выиграла ни одного матча группы, не выиграла ни одного матча группы, не выиграла ни одного матча группы. Строка дополнительная.</p>
-              </div>
-            </a>  
-          </li>
-          <li class="news-item">
-            <a class="news-link" href="#">
-              <img class="news-image" src="img/image-news-6.png" alt="новости-6" width="278" height="233">
+              <img class="news-image" src="img/image-news-6.jpg" alt="новости-6" width="275" height="233">
               <div class="news-item-block">
                 <p class="news-date">23 февраля</p>
                 <h3 class="news-heading">Длинное название вторая строка</h3>
@@ -78,82 +81,83 @@
             </a>  
           </li>
         </ul>
-      </section>
-    </main>
-    <footer>
-      <div class="sponsors">
-        <div class="sberbank">
-          <a class="sberbank-link" href="https://www.sberbank.ru/" >
-            <p class="sberbank-text">Генеральный спонор</p>
-            <img class="sberbank-image" src="img/sberbank.svg" alt="сбербанк" width="140" height="26">
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="sponsors">
+      <div class="sberbank">
+        <a class="sberbank-link" href="https://www.sberbank.ru/" >
+          <p class="sberbank-text">Генеральный спонор</p>
+          <img class="sberbank-image" src="img/sberbank.svg" alt="сбербанк" width="140" height="26">
+        </a>	
+      </div>
+      <div class="sponsors-block">
+        <p class="sponsors-text">Спонсоры</p>
+        <ul class="sponsors-list">
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/baykal.png" alt="байкал сервис" width="42" height="42">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/geldor.png" alt="желдор экспедиция" width="42" height="42">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/iz.png" alt="IZ" width="42" height="42">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/lsr.png" alt="лср" width="42" height="42">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/interprombank.png" alt="интерпромбанк" width="42" height="42">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/match.png" alt="матч тв" width="42" height="42">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/okko.jpg" alt="ОККО" width="42" height="42">
+            </a>
+          </li>
+          <li class="sponsors-item">
+            <a class="sponsors-link" href="https://www.baikalsr.ru/">
+              <img class="sponsors-image" src="img/zhizn.jpg" alt="жизнь" width="42" height="42">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="contacts">
+      <p class="copyright">© 2020 Лига Универов</p>
+      <ul class="socials-list">
+        <li class="socials-item">
+          <a class="socials-link" href="#">
+            <img class="socials-image" src="img/vk.svg" alt="ВК" width="24" height="24">
           </a>	
-        </div>
-        <div class="sponsors-block">
-          <p class="sponsors-text">Спонсоры</p>
-          <ul class="sponsors-list">
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/baykal.png" alt="байкал сервис" width="42" height="42">
-              </a>
-            </li>
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/geldor.png" alt="желдор экспедиция" width="42" height="42">
-              </a>
-            </li>
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/iz.png" alt="IZ" width="42" height="42">
-              </a>
-            </li>
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/lsr.png" alt="лср" width="42" height="42">
-              </a>
-            </li>
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/interprombank.png" alt="интерпромбанк" width="42" height="42">
-              </a>
-            </li>
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/match.png" alt="матч тв" width="42" height="42">
-              </a>
-            </li>
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/okko.jpg" alt="ОККО" width="42" height="42">
-              </a>
-            </li>
-            <li class="sponsors-item">
-              <a class="sponsors-link" href="https://www.baikalsr.ru/">
-                <img class="sponsors-image" src="img/zhizn.jpg" alt="жизнь" width="42" height="42">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="contacts">
-        <p class="copyright">© 2020 Лига Универов</p>
-        <ul class="socials-list">
-          <li class="socials-item">
-            <a class="socials-link" href="#">
-              <img class="socials-image" src="img/vk.svg" alt="ВК" width="24" height="24">
-            </a>	
-          </li>
-          <li class="socials-item">
-            <a class="socials-link" href="#">
-              <img class="socials-image" src="img/instagram.svg" alt="Инстаграм" width="24" height="24">
-            </a>	
-          </li>
-          <li class="social-networks-item">
-            <a class="social-networks-link" href="#">
-              <img class="socials-image" src="img/youtube.svg" alt="Ютуб" width="24" height="24">
-            </a>	
-          </li>
-        </ul>
-      </div>
-    </footer>
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="#">
+            <img class="socials-image" src="img/instagram.svg" alt="Инстаграм" width="24" height="24">
+          </a>	
+        </li>
+        <li class="socials-item">
+          <a class="socials-link" href="#">
+            <img class="socials-image" src="img/youtube.svg" alt="Ютуб" width="24" height="24">
+          </a>	
+        </li>
+      </ul>
+    </div>
+  </footer>
 </body>
 </html>
