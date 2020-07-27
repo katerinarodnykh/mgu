@@ -201,6 +201,7 @@ li {
   font-size: 13px;
   color: #828282;
   align-self: center;
+  text-transform: uppercase;
 }
 
 .sponsors-block {
@@ -214,6 +215,7 @@ li {
   color: #828282;
   margin-right: 30px;
   align-self: center;
+  text-transform: uppercase;
 }
 
 .sponsors-list {
