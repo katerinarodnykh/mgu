@@ -141,6 +141,12 @@ li {
   margin-right: 30px;
 }
 
+.news-link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
 .news-link::before {
   content: "";
   position: absolute;
@@ -152,6 +158,7 @@ li {
 .news-item-block {
   padding: 20px;
   background-color: #ffffff;
+  height: 100%;
 }
 
 .news-date {
