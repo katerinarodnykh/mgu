@@ -112,28 +112,31 @@ table {
   padding-bottom: 20px;
 }
 
-.table-tournament {
-  width: 280px;
+.table-block {
+  display: flex;
 }
 
-.table-head {
-  font-family: Helvetica Neue;
-  font-weight: 400; 
+.table-tournament {
+  width: 100%;
+}
+
+.table-head { 
   font-size: 13px;
   line-height: 16px;
   color: #828282;
-  text-align: left;
 }
 
 .table-cell-head {
   height: 40px;
-  padding-left: 10px;
-  vertical-align: middle;
+  text-align: center;
+}
+
+.table-cell-head:nth-child(1) {
+  text-align: left;
+  padding: 10px;
 }
 
 .table-row {
-  font-family: Helvetica Neue;
-  font-weight: 400;
   font-size: 13px;
   line-height: 16px;
   color: #111111;
@@ -141,10 +144,10 @@ table {
 }
 
 .table-cell {
-  padding-left: 10px;
+  padding: 0 5px;
   border-bottom: 2px solid #F7F7F7;
   height: 70px;
-  vertical-align: middle;
+  text-align: center;
 }
 
 .table-num {
@@ -152,30 +155,30 @@ table {
   font-weight: 700;
   width: 30px;
   height: 70px;
-  vertical-align: middle;
   text-align: center;
   color: #ffffff;
 }
 
-.table-num-odd {
+.table-row:nth-child(odd) .table-num {
   background-color: #FD1E4F;
 }
 
-.table-num-even {
+.table-row:nth-child(even) .table-num {
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FD1E4F;
 }
 
 .table-link {
-  padding-left: 10px;
+  padding-left: 15px;
   display: flex;
   align-items: center;
 }
 
 .table-text {
+  width: 130px;
   padding-left: 10px;
-  font-family: Helvetica Neue;
-  font-weight: bold;
+  font-weight: 700;
   color: #111111;
+  text-align: left;
 }
 
 .al-table {
@@ -272,10 +275,6 @@ table {
   padding: 0 40px 50px 40px;
 }
 
-.table-bombardier {
-  width: 400px;
-}
-
 .table-statistics {
   width: 370px
 }
@@ -286,9 +285,9 @@ table {
 }
 
 .team {
-  font-weight: 400;
   color: #828282;
   padding-left: 10px;
+  text-align: left;
 }
 
 .footer {
