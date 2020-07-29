@@ -127,11 +127,12 @@ table {
 }
 
 .table-cell-head {
+  padding: 0 5px;
   height: 40px;
   text-align: center;
 }
 
-.table-cell-head:nth-child(1) {
+.table-cell-head:nth-child(2) {
   text-align: left;
   padding: 10px;
 }
@@ -282,6 +283,17 @@ table {
 .statistics-list {
   display: flex;
   justify-content: space-between;
+}
+
+.table-cell-stat {
+  padding: 0 5px;
+  height: 40px;
+  text-align: center;
+}
+
+.table-cell-stat:nth-child(1) {
+  text-align: left;
+  padding: 10px;
 }
 
 .team {
