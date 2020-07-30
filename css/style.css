@@ -63,6 +63,10 @@ li {
   list-style-type: none;
 }
 
+table {
+  border-collapse: collapse;
+}
+
 .main {
   font-family: "Helvetica Neue", "Arial", san-serif;
   font-size: 16px;
@@ -87,21 +91,128 @@ li {
   flex-shrink: 0;
   width: 280px;
   margin-right: 30px;
-  background-color: #aeaeae;
+  background-color: #F7F7F7;
+}
+
+.league {
+  height: 170px;
+  background-color: #ffffff;
+}
+
+.tournament {
+  padding-top: 50px;
+}
+
+.tournament-heading {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #111111;
+  text-transform: uppercase;
+  padding-bottom: 20px;
+}
+
+.table-block {
+  display: flex;
+}
+
+.table-tournament {
+  width: 100%;
+}
+
+.table-head { 
+  font-size: 13px;
+  line-height: 16px;
+  color: #828282;
+}
+
+.table-cell-head {
+  font-weight: 400;
+  padding-right: 10px;
+  height: 40px;
+  text-align: center;
+}
+
+.table-cell-head:nth-child(1) {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.table-cell-head:nth-child(2) {
+  text-align: left;
+  padding: 10px;
+}
+
+.table-row {
+  font-size: 13px;
+  line-height: 16px;
+  color: #111111;
+  background-color: #ffffff;
+}
+
+.table-cell {
+  padding-right: 10px;
+  border-bottom: 2px solid #F7F7F7;
+  height: 70px;
+  text-align: center;
+}
+
+.table-cell:nth-child(3) {
+  width: 35px;
+}
+
+.table-cell:nth-child(4) {
+  width: 35px;
+}
+
+.table-num {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  width: 30px;
+  height: 70px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.table-row:nth-child(odd) .table-num {
+  background-color: #FD1E4F;
+}
+
+.table-row:nth-child(even) .table-num {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), #FD1E4F;
+}
+
+.table-link {
+  padding-left: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.table-text {
+  width: 100%;
+  padding-left: 10px;
+  font-weight: 700;
+  color: #111111;
+  text-align: left;
+}
+
+.al-table {
+  padding-top: 30px;
 }
 
 .news {
   width: 885px;
 }
 
-.news-block {
+.main-block {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-bottom: 15px;
 }
 
-.news-main {
+.main-heading {
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 26px;
@@ -109,11 +220,11 @@ li {
   text-transform: uppercase;
 }
 
-.news-al-link {
+.al-link {
   display: flex;
 }
 
-.news-al {
+.al {
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 13px;
@@ -122,7 +233,7 @@ li {
   text-transform: uppercase;
 }
 
-.news-arrow {
+.arrow {
   margin-left: 10px;
 }
 
@@ -174,6 +285,69 @@ li {
   color: #111111;
   margin-bottom: 10px;
   text-transform: uppercase;
+}
+
+.statistics {
+  padding: 0 40px 50px 40px;
+}
+
+.statistics-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statistics-item:not(:nth-child(3)) {
+  padding-right: 30px;
+}
+
+.table-bombardiers {
+  width: 400px;
+}
+
+.table-statistics {
+  width: 370px
+}
+
+.table-head-stat {
+  width: 35px;
+  font-weight: 400;
+  padding-right: 10px;
+  height: 40px;
+  text-align: center;
+}
+
+.table-head-stat:nth-child(1) {
+  text-align: left;
+  padding: 10px;
+}
+
+.table-cell-stat {
+  padding-right: 10px;
+  border-bottom: 2px solid #F7F7F7;
+  height: 70px;
+  text-align: center;
+}
+
+.table-cell-stat:nth-child(2) {
+  width: 35px;
+}
+
+.table-cell-stat:nth-child(3) {
+  width: 35px;
+}
+
+.table-link-block {
+  padding-left: 20px;
+  width: 290px;
+  display: flex;
+  align-items: center;
+}
+
+.team {
+  width: 100%
+  color: #828282;
+  padding-left: 10px;
+  text-align: left;
 }
 
 .footer {
@@ -235,7 +409,7 @@ li {
   align-items: center;
   background-color: #111111;
   justify-content: space-between;
-  padding: 43px 30px;
+  padding: 40px;
 }
 
 .copyright {
