@@ -357,7 +357,6 @@ table {
 
 .media-block {
   display: flex;
-  flex-wrap: wrap;
 }
 
 .main-photo-link {
