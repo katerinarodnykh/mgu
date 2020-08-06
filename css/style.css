@@ -390,6 +390,17 @@ table {
   width: 580px;
 }
 
+.wrapper-main-media:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.3);
+  z-index: 2;
+}
+
 .icon-media {
   position: absolute;
   top: 20px;
@@ -413,6 +424,7 @@ table {
   max-height: 78px;
   position: absolute;
   bottom: 60px;
+  z-index: 3;
 }
 
 .media-date {
@@ -421,7 +433,8 @@ table {
   color: #FFFFFF;
   padding-left: 20px;
   position: absolute;
-  bottom: 40px;
+  bottom: 35px;
+  z-index: 3;
 }
 
 .wrapper-other-media {
@@ -434,6 +447,17 @@ table {
   bottom: 0px;
   border-bottom: 10px solid #FD1E4F;
   width: 280px;
+}
+
+.wrapper-other-media:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,.3);
+  z-index: 2;
 }
 
 .footer {
