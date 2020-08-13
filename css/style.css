@@ -79,6 +79,65 @@ table {
   width: 1280px;
 }
 
+.promo {
+  position: relative;
+  height: 540px;
+  background-color: #ffffff;
+}
+
+.promo-heading {
+  position: absolute;
+  bottom: 25px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 85px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-left: 40px;
+  padding-right: 250px;
+  margin: 0;
+}
+
+.slider-list {
+  display: flex;
+}
+
+.slider-item {
+  position: relative;
+  width: 256px;
+  height: 100px;
+}
+
+.slider-item:first-child {
+  background-color: #FFE052;
+  text-align: center;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 40px;
+}
+
+.slider-heading  {
+  position: absolute;
+  top: 20px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0 20px 20px 20px;
+}
+
+.calendar {
+  width: 1280px;
+  height: 280px;
+  background-color: #ffffff;
+  margin-top: 5px;
+}
+
 .sidebar-news {
   display: flex;
   padding-top: 30px;
