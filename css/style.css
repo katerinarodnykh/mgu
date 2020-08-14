@@ -91,7 +91,7 @@ table {
   width: 1280px;
   height: 540px;
   z-index: 3;
-  background: url(../img/Logo.svg) no-repeat bottom 200px left 625px;
+  background: url(../img/logo.svg) no-repeat bottom 200px left 625px;
 }
 
 .promo:after {
