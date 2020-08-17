@@ -183,6 +183,7 @@ table {
   height: 540px;
   z-index: 3;
   background: url(../img/logo.svg) no-repeat bottom 200px left 625px;
+  pointer-events: none;
 }
 
 .promo:after {
@@ -194,6 +195,7 @@ table {
   bottom: 0;
   background: rgba(0,0,0,.3);
   z-index: 2;
+  pointer-events: none;
 }
 
 .promo-heading {
