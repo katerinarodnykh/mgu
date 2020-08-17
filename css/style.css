@@ -238,6 +238,7 @@ table {
   bottom: 0;
   background: rgba(0,0,0,.3);
   z-index: 2;
+  pointer-events: none;
 }
 
 .slider-item::before {
@@ -255,6 +256,7 @@ table {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 3;
+  pointer-events: none;
 }
 
 .slider-item:hover .slider-heading {
