@@ -83,40 +83,45 @@ table {
   position: relative;
 }
 
-.menu {
+.header {
   position: absolute;
   top: 0;
+  left: 40px;
   display: flex;
   z-index: 4;
   width: 1280px;
   height: 60px;
 }
 
-.menu-list {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 40px;
-}
-
-.logo {
+.logo-link {
+  padding-top: 20px;
+  padding-left: 40px;
   padding-right: 30px;
-}
-
-.logo-name {
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 20px;
   color: #ffffff;
   text-transform: uppercase;
-  padding-left: 20px;
 }
 
-.menu-item {
+.logo-image {
+  padding-right: 20px;
+}
+
+.menu {
+  margin-top: 25px;
+  position: relative;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-link {
+  display: block;
   padding-right: 20px;
   padding-left: 20px;
-}
-
-.menu-name {
+  padding-bottom: 20px;
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 13px;
@@ -124,52 +129,44 @@ table {
   text-transform: uppercase;
 }
 
-.tournament-list {
+.submenu {
+  display: block;
   position: absolute;
-  top: 60px;
   background-color: #ffffff;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
+  margin-left: 20px;
+  border-top: 10px solid #FFE052;
+  border-width: 100%;
   visibility: hidden;
   opacity: 0;
-  position: absolute;
 }
 
-.tournament-list::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  border-bottom: 10px solid #FFE052;
-  width: 100%;
-}
-
-.menu-list .menu-item:hover > .tournament-list {
+.menu-item:hover > .submenu {
   visibility: visible;
   opacity: 1;
   transition: opacity 1s;
 }
 
-.tournament-item {
-  padding-bottom: 5px;
-  padding-right: 20px;
-  padding-left: 20px;
-} 
-
-.tournament-name {
+.submenu-link {
+  display: block;
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 13px;
   line-height: 13px;
   color: #111111;
   text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
 }
 
-.tournament-name:hover {
+.submenu-link:hover {
   color: #FD1E4F;
-  transition: color 0.3s;
+  transition: color 0.7s;
 }
 
-.main-sberbank {
+.sber-link {
   position: absolute;
   top: 15px;
   right: 40px;
@@ -258,7 +255,6 @@ table {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 3;
-  pointer-events: none;
 }
 
 .slider-item:hover .slider-heading {
