@@ -67,6 +67,89 @@ table {
   border-collapse: collapse;
 }
 
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  width: 1280px;
+  margin: 0 auto;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  padding-left: 40px;
+}
+
+.logo-link {
+  padding-right: 30px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.logo-image {
+  padding-right: 20px;
+}
+
+.menu-list {
+  display: flex;
+}
+
+.menu-link {
+  display: block;
+  padding: 20px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.submenu {
+  display: block;
+  position: absolute;
+  background-color: #ffffff;
+  margin-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-top: 10px solid #FFE052;
+  border-width: 100%;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.menu-item:hover > .submenu {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+.submenu-link {
+  display: block;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 13px;
+  color: #111111;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.submenu-link:hover {
+  color: #FD1E4F;
+  transition: color 0.7s;
+}
+
+.sber-link {
+  margin: 0 0 0 auto;
+}
+
 .main {
   font-family: "Helvetica Neue", "Arial", san-serif;
   font-size: 16px;
@@ -92,6 +175,7 @@ table {
   height: 540px;
   z-index: 3;
   background: url(../img/logo.svg) no-repeat bottom 200px left 625px;
+  pointer-events: none;
 }
 
 .promo:after {
@@ -103,6 +187,7 @@ table {
   bottom: 0;
   background: rgba(0,0,0,.3);
   z-index: 2;
+  pointer-events: none;
 }
 
 .promo-heading {
@@ -145,6 +230,7 @@ table {
   bottom: 0;
   background: rgba(0,0,0,.3);
   z-index: 2;
+  pointer-events: none;
 }
 
 .slider-item::before {
@@ -162,6 +248,7 @@ table {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   z-index: 3;
+  pointer-events: none;
 }
 
 .slider-item:hover .slider-heading {
