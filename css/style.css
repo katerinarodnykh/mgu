@@ -282,7 +282,7 @@ table {
 }
 
 .calendar {
-  padding: 30px 15px;
+  padding: 30px 10px;
   background-color: #ffffff;
   display: flex;
   align-items: center;
@@ -322,11 +322,12 @@ table {
   background-color: #FD1E4F;
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
-  text-align: center;
   color: #ffffff;
   font-size: 13px;
   text-transform: uppercase;
-  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .match-block {
@@ -345,6 +346,15 @@ table {
   padding-left: 15px;
   background-color: #F7F7F7;
   border-bottom: 1px solid #ffffff;
+}
+
+.team-text {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  padding-left: 10px;
+  color: #111111;
+  text-align: left;
 }
 
 .score {
