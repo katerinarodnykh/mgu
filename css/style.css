@@ -284,62 +284,81 @@ table {
 .calendar {
   padding: 30px 10px;
   background-color: #ffffff;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  padding: 0 25px 25px 25px;
+}
+
+.calendar-heading {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0 auto 0 0;
+}
+
+.calendar-tournament-list {
   display: flex;
   align-items: center;
 }
 
-.heading-block {
-  display: flex;
-  align-items: center;
-  padding: 0 15px 25px 15px;
+.calendar-tournament-link {
+  padding-left: 30px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px; 
+  color: #111111;
+  text-transform: uppercase;
 }
 
-.match-list {
+.calendar-block {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-list {
   display: flex;
   padding: 0 15px;
+  font-size: 13px;
 }
 
-.match-item:not(:nth-child(4)) {
+.calendar-item:not(:nth-child(4)) {
   padding-right: 30px;
 }
 
-.match-item:nth-child(1) .technical-defeat {
-  display: flex;
-}
-
-.match-item:nth-child(3) .penalty-block {
-  display: flex;
-}
-
-.match-link {
+.calendar-match-link {
   display: flex;
   flex-direction: column;
 }
 
-.date-block {
+.calendar-date {
   width: 280px;
   height: 40px;
   background-color: #FD1E4F;
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   color: #ffffff;
-  font-size: 13px;
   text-transform: uppercase;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.match-block {
+.calendar-match {
   display: flex;
   width: 280px;
 }
 
-.teams-block {
+.calendar-teams {
   width: 100%;
 }
 
-.teams-name {
+.calendar-teams-name {
   height: 60px;
   display: flex;
   align-items: center;
@@ -348,16 +367,15 @@ table {
   border-bottom: 1px solid #ffffff;
 }
 
-.team-text {
+.calendar-teams-text {
   font-weight: 700;
-  font-size: 13px;
   line-height: 16px;
   padding-left: 10px;
   color: #111111;
   text-align: left;
 }
 
-.score {
+.calendar-score {
   height: 60px;
   width: 55px;
   background-color: #F7F7F7;
@@ -366,53 +384,48 @@ table {
   align-items: center;
   justify-content: center;
   padding: 0 10px;
-  font-size: 13px;
   line-height: 16px;
   color: #111111;
 }
 
-.penalty-block {
+.calendar-penalty {
   height: 120px;
   background-color: #F7F7F7;
   border-left: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding: 21px 0;
 }
 
-.penalty-score {
+.calendar-penalty-score {
   width: 55px;
   text-align: center;
-  font-size: 13px;
   line-height: 16px;
   color: #111111;
   padding: 0 10px;
 }
 
-.penalty {
+.calendar-penalty-text {
   font-weight: 700;
-  font-size: 13px;
   line-height: 16px;
   color: #111111;
   text-align: center;
   text-transform: uppercase;
 }
 
-.technical-defeat {
+.calendar-technical-defeat {
   width: 55px;
   height: 120px;
   background-color: #F7F7F7;
   border-left: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   font-weight: 700;
-  font-size: 13px;
   line-height: 16px;
   color: #111111;
   text-transform: uppercase;
-  display: none;
+  display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 20px;
@@ -556,12 +569,11 @@ table {
   font-size: 26px;
   color: #111111;
   text-transform: uppercase;
-   margin: 0 auto 0 0;
+  margin: 0 auto 0 0;
 }
 
 .al-link {
   display: flex;
-  padding-left: 30px;
 }
 
 .al {
