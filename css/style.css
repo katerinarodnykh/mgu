@@ -282,10 +282,153 @@ table {
 }
 
 .calendar {
-  width: 1280px;
-  height: 280px;
+  padding: 30px 10px;
   background-color: #ffffff;
-  margin-top: 5px;
+}
+
+.calendar-header {
+  display: flex;
+  align-items: center;
+  padding: 0 25px 25px 25px;
+}
+
+.calendar-heading {
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0 auto 0 0;
+}
+
+.calendar-tournament-list {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-tournament-link {
+  padding-left: 30px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px; 
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.calendar-block {
+  display: flex;
+  align-items: center;
+}
+
+.calendar-list {
+  display: flex;
+  padding: 0 15px;
+  font-size: 13px;
+}
+
+.calendar-item:not(:nth-child(4)) {
+  padding-right: 30px;
+}
+
+.calendar-match-link {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-date {
+  width: 280px;
+  height: 40px;
+  background-color: #FD1E4F;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar-match {
+  display: flex;
+  width: 280px;
+}
+
+.calendar-teams {
+  width: 100%;
+}
+
+.calendar-teams-name {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #ffffff;
+}
+
+.calendar-teams-text {
+  font-weight: 700;
+  line-height: 16px;
+  padding-left: 10px;
+  color: #111111;
+  text-align: left;
+}
+
+.calendar-score {
+  height: 60px;
+  width: 55px;
+  background-color: #F7F7F7;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 10px;
+  line-height: 16px;
+  color: #111111;
+}
+
+.calendar-penalty {
+  height: 120px;
+  background-color: #F7F7F7;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 21px 0;
+}
+
+.calendar-penalty-score {
+  width: 55px;
+  text-align: center;
+  line-height: 16px;
+  color: #111111;
+  padding: 0 10px;
+}
+
+.calendar-penalty-text {
+  font-weight: 700;
+  line-height: 16px;
+  color: #111111;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.calendar-technical-defeat {
+  width: 55px;
+  height: 120px;
+  background-color: #F7F7F7;
+  border-left: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 700;
+  line-height: 16px;
+  color: #111111;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
 }
 
 .sidebar-news {
@@ -416,7 +559,6 @@ table {
 
 .main-block {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding-bottom: 15px;
 }
@@ -427,6 +569,7 @@ table {
   font-size: 26px;
   color: #111111;
   text-transform: uppercase;
+  margin: 0 auto 0 0;
 }
 
 .al-link {
