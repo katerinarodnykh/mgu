@@ -446,15 +446,6 @@ table {
   background-color: #F7F7F7;
 }
 
-.league {
-  height: 170px;
-  background-color: #ffffff;
-}
-
-.tournament {
-  padding-top: 50px;
-}
-
 .tournament-heading {
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
@@ -740,6 +731,7 @@ table {
   bottom: 0;
   border-bottom: 10px solid #FD1E4F;
   width: 580px;
+  z-index: 3;
 }
 
 .wrapper-main-media:after {
@@ -800,6 +792,7 @@ table {
   bottom: 0px;
   border-bottom: 10px solid #FD1E4F;
   width: 280px;
+  z-index: 3;
 }
 
 .wrapper-other-media:after {
