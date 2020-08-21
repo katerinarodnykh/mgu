@@ -43,10 +43,9 @@ html {
   --dark-gray: #575757;
   --rose-red: #FD1E4F;
   --light-gray: #F7F7F7;
-  --gray: 828282;
+  --gray: #828282;
   --red: #ff0000;
 }
-/* применение var(--red); */
 
 .visually-hidden:not(:focus):not(active) {
   position: absolute;
@@ -329,7 +328,7 @@ table {
 }
 
 .calendar-arrow:hover  .calendar-arrow-image {
-  stroke: var(--red);;
+  stroke: var(--red);
   transition: opacity 1s;
 }
 
@@ -482,7 +481,7 @@ table {
 .table-head { 
   font-size: 13px;
   line-height: 16px;
-  color: 828282;
+  color: var(--gray);
 }
 
 .table-cell-head {
@@ -704,7 +703,7 @@ table {
 
 .team {
   width: 100%
-  color: 828282;
+  color: var(--gray);
   padding-left: 10px;
   text-align: left;
 }
@@ -718,8 +717,8 @@ table {
   padding-bottom: 20px;
 }
 
-.main-media-block:hover  .icon-media {
-  fill: var(--red);;
+.media-link:hover  .icon-media {
+  fill: var(--red);
   transition: opacity 1s;
 }
 
@@ -851,7 +850,7 @@ table {
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size: 13px;
-  color: 828282;
+  color: var(--gray);
   align-self: center;
   text-transform: uppercase;
 }
@@ -864,7 +863,7 @@ table {
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
   font-size:13px;
-  color: 828282;
+  color: var(--gray);
   margin-right: 30px;
   align-self: center;
   text-transform: uppercase;
