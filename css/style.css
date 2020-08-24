@@ -327,7 +327,7 @@ table {
   align-items: center;
 }
 
-.calendar-arrow:hover  .calendar-arrow-image {
+.calendar-arrow:hover .calendar-arrow-image {
   stroke: var(--red);
   transition: opacity 1s;
 }
@@ -597,7 +597,7 @@ table {
 
 .news__item {
   position: relative;
-  padding-bottom: 25px;
+  margin-bottom: 25px;
   width: 275px;
 }
 
@@ -724,12 +724,12 @@ table {
   margin-right: 30px;
 }
 
-.media-row__link:hover .media__icon_color_yellow {
+.media-row__link:hover .media__icon--color-yellow {
   fill: var(--red);
   transition: opacity 1s;
 }
 
-.media-row__link:hover .media__icon_color_red {
+.media-row__link:hover .media__icon--color-red {
   fill: var(--yellow);
   transition: opacity 1s;
 }
@@ -754,11 +754,11 @@ table {
   z-index: 2;
 }
 
-.media-row__link_border_red::before {
+.media-row__link--border-red::before {
   border-color: var(--rose-red);
 }
 
-.media-row__link_border_yellow::before {
+.media-row__link--border-yellow::before {
    border-color: var(--yellow);
 }
 
@@ -769,11 +769,11 @@ table {
   z-index: 3;
 }
 
-.media__icon_color_yellow {
+.media__icon--color-yellow {
   fill: var(--yellow);
 }
 
-.media__icon_color_red {
+.media__icon--color-red {
   fill: var(--red);
 }
 
@@ -819,18 +819,18 @@ table {
   width: 1280px;
 }
 
-.footer__sponsors {
+.sponsors {
   display: flex;
   padding: 40px;
   justify-content: space-between;
   align-items: center;
 }
 
-.footer__sponsors-link {
+.sponsors__link {
   display: flex;
 }
 
-.footer__sponsors-text {
+.sponsors__text {
   margin-right: 30px;
   font-family: "Editorial Grotesk", "Arial", san-serif;
   font-weight: 700;
@@ -840,23 +840,23 @@ table {
   text-transform: uppercase;
 }
 
-.footer__sponsors-other {
+.sponsors__other {
   display: flex;
 }
 
-.footer__sponsors-list {
+.sponsors__list {
   display: flex;
 }
 
-.footer__sponsors-item:not(:first-child) {
+.sponsors__item:not(:first-child) {
   margin-left: 30px;
 }
 
-.footer__sponsors-image {
+.sponsors__image {
   border-radius: 50%;
 }
 
-.footer__contacts {
+.contacts {
   display: flex;
   align-items: center;
   background-color: var(--black);
@@ -864,24 +864,24 @@ table {
   padding: 40px;
 }
 
-.footer__copyright {
+.contacts__copyright {
   font-family: "Helvetica Neue", "Arial", san-serif;
   font-size: 13px;
   line-height: 16px;
   color: var(--white);
 }
 
-.footer__socials-list {
+.contacts__socials-list {
   display: flex;
   align-items: center;
 }
 
-.footer__socials-item {
+.contacts__socials-item {
   padding-right: 40px;
   padding-left: 40px;
 }
 
-.footer__socials-item:not(:last-child) {
+.contacts__socials-item:not(:last-child) {
   height: 50px;
   border-right: 1px solid var(--dark-gray);
   padding-top: 12px;
