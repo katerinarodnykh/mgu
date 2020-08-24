@@ -724,12 +724,12 @@ table {
   margin-right: 30px;
 }
 
-.media-row__link:hover .media__icon_color-yellow {
+.media-row__link:hover .media__icon_color_yellow {
   fill: var(--red);
   transition: opacity 1s;
 }
 
-.media-row__link:hover .media__icon_color-red {
+.media-row__link:hover .media__icon_color_red {
   fill: var(--yellow);
   transition: opacity 1s;
 }
@@ -769,11 +769,11 @@ table {
   z-index: 3;
 }
 
-.media__icon_color-yellow {
+.media__icon_color_yellow {
   fill: var(--yellow);
 }
 
-.media__icon_color-red {
+.media__icon_color_red {
   fill: var(--red);
 }
 
