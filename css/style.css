@@ -845,17 +845,17 @@ table {
   color: var(--white);
 }
 
-.contacts__socials-list {
+.socials-list {
   display: flex;
   align-items: center;
 }
 
-.contacts__socials-item {
+.socials-list__item {
   padding-right: 40px;
   padding-left: 40px;
 }
 
-.contacts__socials-item:not(:last-child) {
+.socials-list__item:not(:last-child) {
   height: 50px;
   border-right: 1px solid var(--dark-gray);
   padding-top: 12px;
