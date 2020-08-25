@@ -520,7 +520,7 @@ table {
 
 .table__cell {
   padding-right: 10px;
-  border-bottom: 2px solid var(--dark-gray);
+  border-bottom: 2px solid var(--gray);
   height: 70px;
   text-align: center;
 }
