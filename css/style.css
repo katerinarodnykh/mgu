@@ -485,20 +485,13 @@ table {
   text-align: center;
 }
 
-.table__head-cell-id {
-  padding: 0 10px;
-  font-weight: 400;
-  padding: 0 10px;
-  height: 40px;
-  text-align: center;
+.table__head-cell--id {
+  padding: 10px;
 }
 
-.table__head-cell-main {
+.table__head-cell--main {
   text-align: left;
   padding: 10px;
-  font-weight: 400;
-  padding: 0 10px;
-  height: 40px;
 }
 
 .table__row {
@@ -532,12 +525,9 @@ table {
   text-align: center;
 }
 
-.table__cell-num {
+.table__cell--num {
   width: 35px;
   padding: 0 10px;
-  border-bottom: 2px solid var(--light-gray);
-  height: 70px;
-  text-align: center;
 }
 
 .table__link {
