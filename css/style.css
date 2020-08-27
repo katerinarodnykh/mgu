@@ -844,3 +844,400 @@ table {
   border-right: 1px solid var(--dark-gray);
   padding-top: 12px;
 }
+
+.match-main {
+  background-color: var(--white);
+}
+
+.promo {
+  position: relative;
+  height: 360px;
+  background: url(../img/match-promo.png);
+}
+
+.promo__information {
+  line-height: 22px;
+  color: var(--white);
+  text-align: center;
+  margin: 0 auto 0 auto;
+  font-weight: 700;
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.promo__match {
+  padding: 0 40px;
+  display: flex;
+}
+
+.promo__team {
+  width: 245px;
+}
+
+.promo__team-link {
+  display: flex;
+  align-items: center;
+}
+
+.promo__team-name {
+  padding: 0 20px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: var(--white);
+}
+
+.promo__score {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.promo__score-block {
+  display: flex;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  color: var(--white);
+}
+
+.promo__number {
+  width: 110px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  line-height: 85px
+}
+
+.promo__colon {
+  font-size: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.promo__tournament {
+  position: absolute;
+  text-decoration: underline;
+  line-height: 26px;
+  text-align: center;
+  top: 130px;
+}
+
+.promo__tournament-link {
+  color: var(--white);
+  padding-right: 20px;
+}
+
+.promo__tournament-link:hover {
+  color: var(--yellow);
+}
+
+.promo__menu {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+}
+
+.promo__list {
+  display: flex;
+}
+
+.promo__item {
+  margin-right: 10px;
+  background-color: var(--yellow);
+}
+
+.promo__item:nth-child(2) {
+  background-color: var(--white)
+}
+
+.promo__link {
+  width: 140px;
+  height: 35px;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.promo__link:active {
+  background-color: var(--white)
+}
+
+.events {
+  margin: 40px;
+}
+
+.events__teams {
+  display: flex;
+  width: 1200px;
+  border-bottom: 1px solid var(--light-gray);
+  padding-top: 30px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.events__teams-link {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+}
+
+.events__teams-link:first-child {
+  margin-right: auto;
+}
+
+.events__image {
+  margin: 0 10px;
+}
+
+.events__match {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
+}
+
+.events__players {
+  width: 430px;
+}
+
+.first-events {
+  width: 430px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 25px;
+}
+
+.first-events:nth-child(1) {
+  margin-top: 90px;
+}
+
+.first-events:nth-child(2) {
+  margin-top: 70px;
+}
+
+.first-events:nth-child(3) {
+  margin-top: 100px;
+}
+
+.first-events:nth-child(4) {
+  margin-top: 100px;
+}
+
+.first-events:nth-child(5) {
+  margin-top: 70px;
+}
+
+.first-events:nth-child(6) {
+  margin-top: 70px;
+}
+
+.players {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--black);
+  padding: 5px 0;
+}
+
+.players__profile {
+  margin: 0 10px;
+}
+
+.first-events__icon {
+  margin-left: auto;
+}
+
+.players-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.assistant {
+  color: var(--gray);
+}
+
+.events__time {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events__half {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  color: var(--rose-red);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.events__minute {
+  color: var(--black);
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.events__line {
+  border-left: 1px solid var(--black);
+}
+
+.events__line--game:nth-child(3) {
+  height: 105px;
+}
+
+.events__line--game:nth-child(5) {
+  height: 40px;
+}
+
+.events__line--game:nth-child(7) {
+  height: 30px;
+}
+
+.events__line--game:nth-child(10) {
+  height: 30px;
+}
+
+.events__line--game:nth-child(12) {
+  height: 30px;
+}
+
+.events__line--penalty {
+  height: 30px;
+}
+
+.events__score {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.events__score--game {
+  background-color: var(--rose-red);
+  color: var(--white);
+}
+
+.events__score--penalty {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.second-events {
+  width: 430px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 10px;
+}
+
+.second-events:nth-child(1) {
+  margin-top: 400px;
+}
+
+.second-events:nth-child(2) {
+  margin-top: 170px;
+}
+
+.second-events:nth-child(3) {
+  margin-top: 70px;
+}
+
+.second-events:nth-child(4) {
+  margin-top: 70px;
+}
+
+.second-events__icon {
+  margin-right: auto;
+}
+
+.referee {
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+.referee__wrapper {
+  display: flex;
+  margin-top: 30px;
+}
+.referee__block {
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  padding-right: 30px;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.referee__text {
+  color: var(--gray);
+  padding-bottom: 10px;
+}
+
+.referee__name {
+  font-weight: 700;
+  color: var(--black);
+}
+
+.statistic {
+  padding: 0 40px 30px 40px;
+}
+
+.statistic__half {
+  padding-top: 5px;
+}
+
+.statistic__text {
+  font-size: 13px;
+  line-height: 16px;
+  color: var(--gray);
+  padding-bottom: 10px;
+  padding-top: 25px;
+}
+
+.statistic__line {
+  display: flex;
+  width: 1200px;
+  height: 40px;
+  font-family: "Editorial Grotesk", "Arial", san-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white);
+}
+
+.statistic__item {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.statistic__item:first-child {
+  background-color: var(--dark-gray);
+  justify-content: flex-end;
+}
+
+.statistic__item:last-child {
+  background-color: var(--rose-red);
+  justify-content: flex-start;
+}

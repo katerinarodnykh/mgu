@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Матч</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+	<svg class="svg-sprite" style="display: none;" >
+    <symbol id="profile" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <rect x="0.5" y="0.5" width="29" height="29" fill="white" stroke="#DFDFDF"/>
+          <path d="M3 30C3 26.6984 3.15909 24.6414 3.47727 23.8289C3.77273 23.3388 4.39773 22.8681 5.35227 22.4167C5.44318 22.3651 6.19034 22.0813 7.59375 21.5655C8.99716 21.0496 9.71591 20.7852 9.75 20.7723C10.5341 20.4499 11.0483 20.2016 11.2926 20.0275C11.5369 19.8534 11.7216 19.6116 11.8466 19.3021L12.2386 18.3735C12.2955 18.0511 12.2273 17.7867 12.0341 17.5804C10.5227 16.0327 9.77273 13.937 9.78409 11.2932C9.78409 9.16518 10.2443 7.41766 11.1648 6.0506C12.0852 4.68353 13.3636 4 15 4C16.6364 4 17.9148 4.68353 18.8352 6.0506C19.7557 7.41766 20.2159 9.16518 20.2159 11.2932C20.2273 13.937 19.4773 16.0327 17.9659 17.5804C17.7727 17.7867 17.7045 18.0511 17.7614 18.3735L18.1534 19.3021C18.2784 19.6116 18.4631 19.8534 18.7074 20.0275C18.9517 20.2016 19.4659 20.4499 20.25 20.7723C20.2841 20.7852 21.0028 21.0496 22.4063 21.5655C23.8097 22.0813 24.5568 22.3651 24.6477 22.4167C25.6023 22.8681 26.2273 23.3388 26.5227 23.8289C26.8409 24.6414 27 26.6984 27 30" stroke="#DFDFDF"/>
+    </symbol>
+    <symbol id="yellow-card" viewBox="0 0 16 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <rect width="16" height="22" rx="2" fill="#FFE052"/>
+    </symbol>
+    <symbol id="goal" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M19.955 4.045C18.9115 2.99733 17.671 2.16639 16.3051 1.60004C14.9391 1.03369 13.4747 0.743099 11.996 0.745004C5.78297 0.745004 0.745972 5.782 0.745972 11.995C0.745972 15.104 2.00697 17.918 4.04497 19.954C5.08849 21.0017 6.32892 21.8326 7.69486 22.399C9.0608 22.9653 10.5253 23.2559 12.004 23.254C18.217 23.254 23.254 18.217 23.254 12.004C23.254 8.895 21.993 6.081 19.955 4.045ZM19.746 6.086C20.9678 7.67088 21.6652 9.59725 21.741 11.597L21.742 11.616L18.642 9.283L19.746 6.086ZM14.814 2.665L12.078 4.698L9.21297 2.657C10.1171 2.3842 11.0566 2.24704 12.001 2.25C13.005 2.25 13.973 2.402 14.884 2.683L14.815 2.665H14.814ZM5.47497 9.283L2.25797 11.64C2.32833 9.60336 3.04098 7.64114 4.29397 6.034L4.27797 6.056L5.47497 9.283ZM4.04097 17.625H7.76097L8.93497 21.256C6.97226 20.5977 5.26686 19.3377 4.06097 17.655L4.04097 17.625ZM10.64 21.655L8.85197 16.125H3.16697C2.76958 15.2886 2.4983 14.3979 2.36197 13.482L2.35497 13.428L7.27497 9.82401L5.41697 4.815C6.04615 4.23647 6.74847 3.74293 7.50597 3.347L7.55997 3.321L12.097 6.552L16.444 3.322C17.264 3.749 17.971 4.249 18.602 4.83L18.595 4.824L16.868 9.82401L21.647 13.42C21.5079 14.3775 21.2254 15.3086 20.809 16.182L20.834 16.124H15.353L13.382 21.651C12.4552 21.7827 11.5144 21.7813 10.588 21.647L10.641 21.653L10.64 21.655ZM15.121 21.238L16.409 17.625H19.959C18.7795 19.2872 17.1132 20.5423 15.19 21.217L15.121 21.238Z" fill="#111111"/>
+				<path d="M16.257 10.473L12.087 7.44299L7.91699 10.473L9.50999 15.375H14.664L16.257 10.473ZM13.574 13.875H10.599L9.67999 11.046L12.086 9.29799L14.492 11.046L13.574 13.875Z" fill="#111111"/>
+    </symbol>
+    <symbol id="no-goal" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path d="M19.955 4.045C18.9115 2.99733 17.671 2.16639 16.3051 1.60004C14.9391 1.03369 13.4747 0.743099 11.996 0.745004C5.78297 0.745004 0.745972 5.782 0.745972 11.995C0.745972 15.104 2.00697 17.918 4.04497 19.954C5.08849 21.0017 6.32892 21.8326 7.69486 22.399C9.0608 22.9653 10.5253 23.2559 12.004 23.254C18.217 23.254 23.254 18.217 23.254 12.004C23.254 8.895 21.993 6.081 19.955 4.045ZM19.746 6.086C20.9678 7.67088 21.6652 9.59725 21.741 11.597L21.742 11.616L18.642 9.283L19.746 6.086ZM14.814 2.665L12.078 4.698L9.21297 2.657C10.1171 2.3842 11.0566 2.24704 12.001 2.25C13.005 2.25 13.973 2.402 14.884 2.683L14.815 2.665H14.814ZM5.47497 9.283L2.25797 11.64C2.32833 9.60336 3.04098 7.64114 4.29397 6.034L4.27797 6.056L5.47497 9.283ZM4.04097 17.625H7.76097L8.93497 21.256C6.97226 20.5977 5.26686 19.3377 4.06097 17.655L4.04097 17.625ZM10.64 21.655L8.85197 16.125H3.16697C2.76958 15.2886 2.4983 14.3979 2.36197 13.482L2.35497 13.428L7.27497 9.82401L5.41697 4.815C6.04615 4.23647 6.74847 3.74293 7.50597 3.347L7.55997 3.321L12.097 6.552L16.444 3.322C17.264 3.749 17.971 4.249 18.602 4.83L18.595 4.824L16.868 9.82401L21.647 13.42C21.5079 14.3775 21.2254 15.3086 20.809 16.182L20.834 16.124H15.353L13.382 21.651C12.4552 21.7827 11.5144 21.7813 10.588 21.647L10.641 21.653L10.64 21.655ZM15.121 21.238L16.409 17.625H19.959C18.7795 19.2872 17.1132 20.5423 15.19 21.217L15.121 21.238Z" fill="#111111"/>
+				<path d="M16.257 10.473L12.087 7.44299L7.91699 10.473L9.50999 15.375H14.664L16.257 10.473ZM13.574 13.875H10.599L9.67999 11.046L12.086 9.29799L14.492 11.046L13.574 13.875Z" fill="#111111"/>
+				<path fill-rule="evenodd" clip-rule="evenodd" d="M23.7071 1.70712L1.70706 23.7071L0.292847 22.2929L22.2928 0.292908L23.7071 1.70712Z" fill="#FD1E4F"/>
+    </symbol>
+    <symbol id="red-card" viewBox="0 0 16 22" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <rect width="16" height="22" rx="2" fill="#FD1E4F"/>
+    </symbol>
+    <symbol id="penalty" viewBox="0 0 26 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M1 6H3V6.00024L23 6.00024V6H25V6.00024V8.00025V24H23V8.00025L3 8.00024V24H1V8.00024V6.00024V6Z" fill="#111111"/>
+        <path d="M2 22H24" stroke="#111111"/>
+        <path d="M2 18L6 22" stroke="#111111"/>
+        <path d="M2 11L13 22" stroke="#111111"/>
+        <path d="M24 11L13 22" stroke="#111111"/>
+        <path d="M24 18L20 22" stroke="#111111"/>
+        <path d="M21 7L6 22" stroke="#111111"/>
+        <path d="M14 7L2 19" stroke="#111111"/>
+        <path d="M7 7L2 12" stroke="#111111"/>
+        <path d="M5 7L20 22" stroke="#111111"/>
+        <path d="M12 7L24 19" stroke="#111111"/>
+        <path d="M19 7L24 12" stroke="#111111"/>
+        <path d="M1.5 7L5.001 1.00038L20.999 0.999895L24.5 7" stroke="#111111" stroke-width="2"/>
+    </symbol>
+  </svg>
+  <main class="main match-main">
+  	<section class="promo">
+  		<div class="promo__information">
+  			<p class="promo__text">02.06.2020, Сб, 12:00</p>
+  			<p class="promo__text">Nike BoxMSK, ЦПКиО им. Горького, ул. Крымский Вал, 9</p>
+  		</div>
+  		<div class="promo__match">
+  			<div class="promo__team">
+  				<a class="promo__team-link" href="#">
+  					<img class="promo__image" src="img/first-team.png" alt="первая команда" width="150" height="150">
+  					<p class="promo__team-name">Экономисты</p>
+  				</a>
+  			</div>
+  			<div class="promo__score">
+  				<div class="promo__score-block">
+  					<p class="promo__number">2</p>
+  					<p class="promo__colon">:</p>
+  					<p class="promo__number">0</p>
+  				</div>
+  				<div class="promo__tournament">
+  					<a class="promo__tournament-link" href="#">Кубок открытия
+  					</a>
+  					<a class="promo__tournament-link" href="#">Группа А
+  					</a>
+  				</div>
+  			</div>
+  			<div class="promo__team">
+  				<a class="promo__team-link" href="#">
+  					<p class="promo__team-name">ФГУ</p>
+  					<img class="promo__image" src="img/second-team.png" alt="вторая команда" width="150" height="150">
+  				</a>
+  			</div>
+  			<nav class="promo__menu">
+  				<ul class="promo__list">
+  					<li class="promo__item">
+  						<a class="promo__link" href="#">Протокол</a>
+  					</li>
+  					<li class="promo__item">
+  						<a class="promo__link" href="#">События</a>
+  					</li>
+  					<li class="promo__item">
+  						<a class="promo__link" href="#">История</a>
+  					</li>
+  					<li class="promo__item">
+  						<a class="promo__link" href="#">Медиа</a>
+  					</li>
+  					<li class="promo__item">
+  						<a class="promo__link" href="#">Новости</a>
+  					</li>
+  				</ul>
+  			</nav>
+  		</div>
+  	</section>
+  	<section class="events">
+  	  <div class="heading">
+        <h2 class="heading__text">События матча</h2>
+      </div>
+      <div class="events__teams">
+        <a class="events__teams-link" href="#">
+          <img class="events__image" src="img/first-team-mini.png" alt="иконка команды" width="40" height="40">
+          Экономисты
+        </a>
+        <a class="events__teams-link" href="#">
+          ФГУ
+          <img class="events__image" src="img/second-team-mini.png" alt="иконка команды" width="40" height="40">
+        </a>
+      </div>
+      <div class="events__match">
+        <div class="events__players">
+          <div class="first-events">
+            <a class="players" href="#">
+              <svg class="players__profile" width="30" height="30">
+                <use xlink:href="#profile"></use>
+              </svg>
+              Ибрагимов Линард
+            </a>
+            <svg class="first-events__icon" width="25" height="25">
+              <use xlink:href="#yellow-card"></use>
+            </svg>
+          </div>
+          <div class="first-events">
+            <div class="players-block">
+              <a class="players" href="#">
+                <svg class="players__profile" width="30" height="30">
+                  <use xlink:href="#profile"></use>
+                </svg>
+                Ибрагимов Линард
+              </a>
+              <a class="players assistant" href="#">
+                <svg class="players__profile" width="30" height="30">
+                  <use xlink:href="#profile"></use>
+                </svg>
+                Ибрагимов Линард
+              </a>
+            </div>
+            <svg class="first-events__icon" width="25" height="25">
+              <use xlink:href="#goal"></use>
+            </svg>
+          </div>
+          <div class="first-events">
+            <a class="players" href="#">
+              <svg class="players__profile" width="30" height="30">
+                <use xlink:href="#profile"></use>
+              </svg>
+              Ибрагимов Линард
+            </a>
+            <svg class="first-events__icon" width="25" height="25">
+              <use xlink:href="#red-card"></use>
+            </svg>
+          </div>
+          <div class="first-events">
+            <div class="players-block">
+              <a class="players" href="#">
+                <svg class="players__profile" width="30" height="30">
+                  <use xlink:href="#profile"></use>
+                </svg>
+                Ибрагимов Линард
+              </a>
+            </div>
+            <svg class="first-events__icon" width="25" height="25">
+              <use xlink:href="#goal"></use>
+            </svg>
+          </div>
+          <div class="first-events">
+            <div class="players-block">
+              <a class="players" href="#">
+                <svg class="players__profile" width="30" height="30">
+                  <use xlink:href="#profile"></use>
+                </svg>
+                Ибрагимов Линард
+              </a>
+            </div>
+            <svg class="first-events__icon" width="25" height="25">
+              <use xlink:href="#goal"></use>
+            </svg>
+          </div>
+          <div class="first-events">
+            <a class="players" href="#">
+              <svg class="players__profile" width="30" height="30">
+                <use xlink:href="#profile"></use>
+              </svg>
+            Ибрагимов Линард
+            </a>
+            <svg class="first-events__icon" width="25" height="25">
+              <use xlink:href="#no-goal"></use>
+            </svg>
+          </div>
+        </div>
+        <div class="events__time">
+          <p class="events__half">1 тайм</p>
+          <p class="events__minute">10'</p> 
+          <div class="events__line events__line--game"></div>
+          <p class="events__minute">17'</p> 
+          <div class="events__line events__line--game"></div>
+          <p class="events__score events__score--game">1 : 0</p>
+          <div class="events__line events__line--game"></div>
+          <p class="events__half">2 тайм</p>
+          <p class="events__minute">37'</p>
+          <div class="events__line events__line--game"></div>
+          <p class="events__score events__score--game">1 : 1</p>
+          <div class="events__line events__line--game"></div>
+          <p class="events__half">Пенальти</p>
+          <p class="events__minute">37'</p>
+          <div class="events__line events__line--penalty"></div>
+          <p class="events__score events__score--penalty">1 : 0</p>
+          <div class="events__line events__line--penalty"></div>
+          <p class="events__score events__score--penalty">1 : 1</p>
+          <div class="events__line events__line--penalty"></div>
+          <p class="events__score events__score--penalty">2 : 1</p>
+          <div class="events__line events__line--penalty"></div>
+          <p class="events__score events__score--penalty">2 : 1</p>
+          <div class="events__line events__line--penalty"></div>
+          <p class="events__score events__score--penalty">2 : 1</p>
+          <div class="events__line events__line--penalty"></div>
+          <p class="events__score events__score--game">2 : 1</p>
+        </div>
+        <div class="events__players">
+          <div class="second-events">
+            <svg class="second-events__icon" width="25" height="25">
+              <use xlink:href="#penalty"></use>
+            </svg>
+            <a class="players" href="#">
+              Ибрагимов Линард
+              <svg class="players__profile" width="30" height="30">
+                <use xlink:href="#profile"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="second-events">
+            <svg class="second-events__icon" width="25" height="25">
+              <use xlink:href="#goal"></use>
+            </svg>
+            <div class="players-block">
+              <a class="players" href="#">
+                Ибрагимов Линард
+                <svg class="players__profile" width="30" height="30">
+                  <use xlink:href="#profile"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="second-events">
+            <svg class="second-events__icon" width="25" height="25">
+              <use xlink:href="#no-goal"></use>
+            </svg>
+            <a class="players" href="#">
+              Ибрагимов Линард
+              <svg class="players__profile" width="30" height="30">
+                <use xlink:href="#profile"></use>
+              </svg>
+            </a>
+          </div>
+          <div class="second-events">
+            <svg class="second-events__icon" width="25" height="25">
+              <use xlink:href="#no-goal"></use>
+            </svg>
+            <a class="players" href="#">
+              Ибрагимов Линард
+              <svg class="players__profile" width="30" height="30">
+                <use xlink:href="#profile"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+  	</section>
+  	<section class="referee">
+  	  <div class="heading">
+        <h2 class="heading__text">судейский корпус</h2>
+      </div>
+      <div class="referee__wrapper">
+        <div class="referee__block">
+          <p class="referee__text">Главный судья:</p>
+          <p class="referee__name">Комов Евгений</p>
+        </div>
+        <div class="referee__block">
+          <p class="referee__text">Второй судья:</p>
+          <p class="referee__name">Намазов Илья</p>
+        </div>
+        <div class="referee__block">
+          <p class="referee__text">Хронометрист:</p>
+          <p class="referee__name">Таришка Александр</p>
+        </div>
+      </div>
+  	</section>
+  	<section class="statistic">
+  	  <div class="heading">
+        <h2 class="heading__text">Статистика матча</h2>
+      </div>
+      <div class="statistic__half">
+        <p class="statistic__text">Фолы в первом тайме:</p>
+        <div class="statistic__line">
+          <div class="statistic__item" style="width: 50%">1</div>
+          <div class="statistic__item" style="width: 50%">1</div>
+        </div>
+      </div>
+      <div class="statistic__half">
+        <p class="statistic__text">Фолы в первом тайме:</p>
+        <div class="statistic__line">
+          <div class="statistic__item" style="width: 30%">1</div>
+          <div class="statistic__item" style="width: 70%">1</div>
+        </div>
+      </div>
+  	</section>
+  </main>
+</body>
+</html>
