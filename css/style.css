@@ -1017,6 +1017,7 @@ table {
 }
 
 .events__match {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px;
@@ -1149,6 +1150,7 @@ table {
 }
 
 .events__penalty {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 0 10px 10px 10px;
