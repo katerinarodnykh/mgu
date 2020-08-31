@@ -948,6 +948,8 @@ table {
 }
 
 .tabs {
+  position: relative;
+  bottom: 35px;
   margin-left: 40px;
 }
 
@@ -983,7 +985,7 @@ table {
 }
 
 .wrapper {
-  margin: 40px;
+  margin: 0 40px 40px 40px;
 }
 
 .events {
@@ -1017,23 +1019,12 @@ table {
 }
 
 .events__match {
-  position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px;
 }
 
-.events__match::after {
-  position: absolute;
-  content: '';
-  width: 1px;
-  height: 810px;
-  left: 50%;
-  background: var(--black);
-  z-index: -1;
-}
-
-.half {
+.events__half {
   font-size: 20px;
   font-weight: 700;
   font-family: "Editorial Grotesk", "Arial", san-serif;
@@ -1046,7 +1037,7 @@ table {
   z-index: 1;
 }
 
-.minute {
+.events__minute {
   color: var(--black);
   height: 40px;
   display: flex;
@@ -1056,11 +1047,51 @@ table {
   z-index: 1;
 }
 
-.yellow-card-left {
-  align-self: flex-start;
+.events__wrapper {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
 }
 
-.events-block {
+.events__wrapper::after {
+  position: absolute;
+  content: '';
+  width: 1px;
+  height: 100px;
+  left: 50%;
+  top: 50%;
+  margin-top: -50px;
+  background: var(--black);
+  z-index: -1;
+}
+
+.events__wrapper:last-child .events__score--penalty {
+  background-color: var(--rose-red);
+  color: var(--white);
+}
+
+.events__wrapper:last-child::after {
+  height: 70px;
+  top: 20px;
+}
+
+.events__wrapper--penalty  {
+  height: 70px;
+  padding-top: 30px;
+}
+
+.events__wrapper--penalty::after {
+  height: 70px;
+}
+
+.events__wrapper--left {
+  justify-content: flex-start;
+}
+
+.events__block {
   width: 430px;
   height: 70px;
   display: flex;
@@ -1068,7 +1099,7 @@ table {
   padding: 0 15px;
 }
 
-.players {
+.events__players {
   display: flex;
   align-items: center;
   font-weight: 700;
@@ -1078,36 +1109,28 @@ table {
   padding: 5px 0; 
 }
 
-.players__profile {
+.events__players--assistant {
+  color: var(--gray);
+}
+
+.events__players-icon {
   margin: 0 5px;
 }
 
-.players__name {
+.events__name {
   padding: 0 5px;
 }
 
-.events-block__icon-left {
+.events__icon--left {
   margin-left: auto;
 }
 
-.yellow-card-right {
-  align-self: flex-end;
+.events__wrapper--right {
+  justify-content: flex-end;
 }
 
-.events-block__icon-right {
+.events__icon--right {
   margin-right: auto;
-}
-
-.goal {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 730px;
-  height: 70px;
-}
-
-.goal--left {
-  align-self: flex-start;
 }
 
 .events__score {
@@ -1119,51 +1142,12 @@ table {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0 20px;
 }
 
 .events__score--game {
   background-color: var(--rose-red);
   color: var(--white);
-}
-
-.goal--right {
-  align-self: flex-end;
-}
-
-.red-card-left {
-  align-self: flex-start;
-}
-
-.red-card-right {
-  align-self: flex-end;
-}
-
-.players--assistant {
-  color: var(--gray);
-}
-
-.red-card-penalty {
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.events__penalty {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 0 10px 10px 10px;
-}
-
-.events__penalty::after {
-  position: absolute;
-  content: '';
-  width: 1px;
-  height: 440px;
-  left: 50%;
-  background: var(--black);
-  z-index: -1;
 }
 
 .events__score--penalty {
@@ -1240,6 +1224,3 @@ table {
   background-color: var(--rose-red);
   justify-content: flex-start;
 }
-
-
-

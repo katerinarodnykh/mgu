@@ -68,26 +68,26 @@
         <a class="promo__tournament-link" href="#">Кубок открытия</a>
         <a class="promo__group-link" href="#">Группа А</a>
       </div>
-      <nav class="tabs">
-        <ul class="tabs__list">
-          <li class="tabs__item">
-            <a class="tabs__link" href="#">Протокол</a>
-          </li>
-          <li class="tabs__item tabs__item--active">
-            <a class="tabs__link" href="#">События</a>
-          </li>
-          <li class="tabs__item">
-            <a class="tabs__link" href="#">История встреч команд</a>
-          </li>
-          <li class="tabs__item">
-            <a class="tabs__link" href="#">Медиа</a>
-          </li>
-          <li class="tabs__item">
-            <a class="tabs__link" href="#">Новости</a>
-          </li>
-        </ul>
-      </nav>
     </section>
+    <nav class="tabs">
+      <ul class="tabs__list">
+        <li class="tabs__item">
+          <a class="tabs__link" href="#">Протокол</a>
+        </li>
+        <li class="tabs__item tabs__item--active">
+          <a class="tabs__link" href="#">События</a>
+        </li>
+        <li class="tabs__item">
+          <a class="tabs__link" href="#">История встреч команд</a>
+        </li>
+        <li class="tabs__item">
+          <a class="tabs__link" href="#">Медиа</a>
+        </li>
+        <li class="tabs__item">
+          <a class="tabs__link" href="#">Новости</a>
+        </li>
+      </ul>
+    </nav>
     <div class="wrapper">
       <section class="events">
         <div class="heading">
@@ -104,263 +104,195 @@
           </a>
         </div>
         <div class="events__match">
-          <p class="half">1 тайм</p>
-          <p class="minute">10'</p>
-          <div class="yellow-card-left">
-            <div class="events-block">
-              <a class="players" href="#">
-                <svg class="players__profile" width="30" height="30">
-                  <use xlink:href="#profile"></use>
-                </svg>
-                <p class="players__name">Ибрагимов Линард</p>
-              </a>
-              <svg class="events-block__icon-left" width="25" height="25">
+          <p class="events__half">1 тайм</p>
+          <p class="events__minute">10'</p>
+          <div class="events__wrapper events__wrapper--left">
+            <div class="events__block">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
+                    <use xlink:href="#profile"></use>
+                  </svg>
+                  <p class="events__name">Ибрагимов Линард</p>
+                </a>
+              </div>
+              <svg class="events__icon events__icon--left" width="25" height="25">
                 <use xlink:href="#yellow-card"></use>
               </svg>
             </div>
           </div> 
-          <div class="yellow-card-right">
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
+          <div class="events__wrapper events__wrapper--right">
+            <div class="events__block">
+              <svg class="events__icon events__icon--right" width="25" height="25">
                 <use xlink:href="#yellow-card"></use>
               </svg>
-                <a class="players" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <p class="events__name">Ибрагимов Линард</p>
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
-                </a>
-            </div>
-          </div>
-          <p class="minute">17'</p> 
-          <div class="goal goal--left">
-            <div class="events-block">
-              <div class="players-block">
-                <a class="players" href="#">
-                  <svg class="players__profile" width="30" height="30">
-                    <use xlink:href="#profile"></use>
-                  </svg>
-                  <p class="players__name">Ибрагимов Линард</p>
                 </a>
               </div>
-              <svg class="events-block__icon-left" width="25" height="25">
+            </div>
+          </div>
+          <p class="events__minute">17'</p>
+          <div class="events__wrapper events__wrapper--left">
+            <div class="events__block">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
+                    <use xlink:href="#profile"></use>
+                  </svg>
+                  <p class="events__name">Ибрагимов Линард</p>
+                </a>
+                <a class="events__players events__players--assistant" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
+                    <use xlink:href="#profile"></use>
+                  </svg>
+                  <p class="events__name">Ибрагимов Линард</p>
+                </a>
+              </div>
+              <svg class="events__icon events__icon--left" width="25" height="25">
                 <use xlink:href="#goal"></use>
               </svg>
             </div>
             <p class="events__score events__score--game">1 : 0</p>
-          </div>
-          <div class="goal goal--right">
-            <p class="events__score events__score--game">1 : 1</p>
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
-                <use xlink:href="#goal"></use>
-              </svg>
-              <div class="players-block">
-                <a class="players" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
-                    <use xlink:href="#profile"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="red-card-left">
-            <div class="events-block">
-              <a class="players" href="#">
-                <svg class="players__profile" width="30" height="30">
-                  <use xlink:href="#profile"></use>
-                </svg>
-                <p class="players__name">Ибрагимов Линард</p>
-              </a>
-              <svg class="events-block__icon-left" width="25" height="25">
-                <use xlink:href="#red-card"></use>
-              </svg>
-            </div>
           </div> 
-          <div class="red-card-right">
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
-                <use xlink:href="#red-card"></use>
-              </svg>
-                <a class="players" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
+          <p class="events__half">2 тайм</p>
+          <p class="events__minute">37'</p>
+          <div class="events__wrapper events__wrapper--left">
+            <div class="events__block">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
+                  <p class="events__name">Ибрагимов Линард</p>
                 </a>
-            </div>
-          </div>
-          <div class="goal goal--left">
-            <div class="events-block">
-              <div class="players-block">
-                <a class="players" href="#">
-                  <svg class="players__profile" width="30" height="30">
+                <a class="events__players events__players--assistant" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
-                  <p class="players__name">Ибрагимов Линард</p>
-                </a>
-                <a class="players players--assistant" href="#">
-                  <svg class="players__profile" width="30" height="30">
-                    <use xlink:href="#profile"></use>
-                  </svg>
-                  <p class="players__name">Ибрагимов Линард</p>
+                  <p class="events__name">Ибрагимов Линард</p>
                 </a>
               </div>
-              <svg class="events-block__icon-left" width="25" height="25">
-                <use xlink:href="#goal"></use>
+              <svg class="events__icon events__icon--left" width="25" height="25">
+                <use xlink:href="#red-card"></use>
               </svg>
             </div>
             <p class="events__score events__score--game">1 : 0</p>
-          </div>
-          <div class="goal goal--right">
-            <p class="events__score events__score--game">1 : 1</p>
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
-                <use xlink:href="#goal"></use>
-              </svg>
-              <div class="players-block">
-                <a class="players" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
-                    <use xlink:href="#profile"></use>
-                  </svg>
-                </a>
-                <a class="players players--assistant" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
-                    <use xlink:href="#profile"></use>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </div>
-          <p class="half">2 тайм</p>
-          <p class="minute">37'</p>
-          <div class="red-card-penalty">
-            <div class="events-block">
-              <a class="players" href="#">
-                <svg class="players__profile" width="30" height="30">
-                  <use xlink:href="#profile"></use>
-                </svg>
-                <p class="players__name">Ибрагимов Линард</p>
-              </a>
-              <svg class="events-block__icon-left" width="25" height="25">
-                <use xlink:href="#red-card"></use>
-              </svg>
-            </div>
-            <p class="events__score events__score--game">1 : 2</p>
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
+            <div class="events__block">
+              <svg class="events__icon events__icon--right" width="25" height="25">
                 <use xlink:href="#penalty"></use>
               </svg>
-              <a class="players" href="#">
-                <p class="players__name">Ибрагимов Линард</p>
-                <svg class="players__profile" width="30" height="30">
-                  <use xlink:href="#profile"></use>
-                </svg>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="events__penalty">
-          <p class="half">Пенальти</p>
-          <div class="goal goal--left">
-            <div class="events-block">
-              <div class="players-block">
-                <a class="players" href="#">
-                  <svg class="players__profile" width="30" height="30">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <p class="events__name">Ибрагимов Линард</p>
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
-                  <p class="players__name">Ибрагимов Линард</p>
                 </a>
               </div>
-              <svg class="events-block__icon-left" width="25" height="25">
+            </div>
+          </div> 
+          <p class="events__half">Пенальти</p>
+          <div class="events__wrapper events__wrapper--left events__wrapper--penalty">
+            <div class="events__block">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
+                    <use xlink:href="#profile"></use>
+                  </svg>
+                  <p class="events__name">Ибрагимов Линард</p>
+                </a>
+              </div>
+              <svg class="events__icon events__icon--left" width="25" height="25">
                 <use xlink:href="#goal"></use>
               </svg>
             </div>
             <p class="events__score events__score--penalty">1 : 0</p>
-          </div>
-          <div class="goal goal--right">
-            <p class="events__score events__score--penalty">1 : 1</p>
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
+          </div> 
+          <div class="events__wrapper events__wrapper--right events__wrapper--penalty">
+            <p class="events__score events__score--penalty">1 : 0</p>
+            <div class="events__block">
+              <svg class="events__icon events__icon--right" width="25" height="25">
                 <use xlink:href="#goal"></use>
               </svg>
-              <div class="players-block">
-                <a class="players" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <p class="events__name">Ибрагимов Линард</p>
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="goal goal--left">
-            <div class="events-block">
-              <div class="players-block">
-                <a class="players" href="#">
-                  <svg class="players__profile" width="30" height="30">
+          </div> 
+          <div class="events__wrapper events__wrapper--left events__wrapper--penalty">
+            <div class="events__block">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
-                  <p class="players__name">Ибрагимов Линард</p>
+                  <p class="events__name">Ибрагимов Линард</p>
                 </a>
               </div>
-              <svg class="events-block__icon-left" width="25" height="25">
+              <svg class="events__icon events__icon--left" width="25" height="25">
                 <use xlink:href="#goal"></use>
               </svg>
             </div>
-            <p class="events__score events__score--penalty">2 : 1</p>
-          </div>
-          <div class="goal goal--right no-goal">
-            <p class="events__score events__score--penalty">2 : 1</p>
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
+            <p class="events__score events__score--penalty">1 : 0</p>
+          </div> 
+          <div class="events__wrapper events__wrapper--right events__wrapper--penalty">
+            <p class="events__score events__score--penalty">1 : 0</p>
+            <div class="events__block">
+              <svg class="events__icon events__icon--right" width="25" height="25">
                 <use xlink:href="#no-goal"></use>
               </svg>
-              <div class="players-block">
-                <a class="players" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <p class="events__name">Ибрагимов Линард</p>
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
                 </a>
               </div>
             </div>
-          </div>
-          <div class="goal goal--left no-goal">
-            <div class="events-block">
-              <div class="players-block">
-                <a class="players" href="#">
-                  <svg class="players__profile" width="30" height="30">
+          </div> 
+          <div class="events__wrapper events__wrapper--left events__wrapper--penalty">
+            <div class="events__block">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
-                  <p class="players__name">Ибрагимов Линард</p>
+                  <p class="events__name">Ибрагимов Линард</p>
                 </a>
               </div>
-              <svg class="events-block__icon-left" width="25" height="25">
+              <svg class="events__icon events__icon--left" width="25" height="25">
                 <use xlink:href="#no-goal"></use>
               </svg>
             </div>
-            <p class="events__score events__score--penalty">2 : 1</p>
-          </div>
-          <div class="goal goal--right no-goal">
-            <p class="events__score events__score--game">2 : 1</p>
-            <div class="events-block">
-              <svg class="events-block__icon-right" width="25" height="25">
+            <p class="events__score events__score--penalty">1 : 0</p>
+          </div> 
+          <div class="events__wrapper events__wrapper--right events__wrapper--penalty">
+            <p class="events__score events__score--penalty">1 : 0</p>
+            <div class="events__block">
+              <svg class="events__icon events__icon--right" width="25" height="25">
                 <use xlink:href="#no-goal"></use>
               </svg>
-              <div class="players-block">
-                <a class="players" href="#">
-                  <p class="players__name">Ибрагимов Линард</p>
-                  <svg class="players__profile" width="30" height="30">
+              <div class="events__players-block">
+                <a class="events__players" href="#">
+                  <p class="events__name">Ибрагимов Линард</p>
+                  <svg class="events__players-icon" width="30" height="30">
                     <use xlink:href="#profile"></use>
                   </svg>
                 </a>
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </section>
       <section class="referee">
